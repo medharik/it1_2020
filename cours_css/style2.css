@@ -1,0 +1,18 @@
+body{
+background-color: rgb(190, 184, 184);
+font-family: sans-serif;
+}
+h1,h2{
+    text-align: center;
+    color: crimson;
+}
+p{
+    text-align: justify;
+    border: 2px solid red;
+padding: 20px;
+}
+img{
+    width: 150px;
+    float: left;
+    margin: 20px;
+}

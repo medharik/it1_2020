@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    box-shadow: 0px 4px 4px black;
+    height: 40px;
+    margin-bottom: 10px;
+    background: #e0ebe5;
+}
+nav ul{
+list-style: none;
+}
+nav li {
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    color: rgb(1, 61, 1);
+}
+nav li a {
+color: rgb(3, 70, 3);
+text-decoration: none;
+}
+nav ul  a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid greenyellow;
+}
+
+#banner{
+    width: 100%;
+    height: calc( 100vh - 50px ); 
+    background: url('banner2.jpg') ;
+    background-size: cover;
+background-position: bottom;
+
+
+}
+#produits{
+    width: 100%;
+    height: 500px;
+    background: chocolate;
+
+}
+#gauche{
+    width: 50%;
+    height: 500px;
+    background: url('StrateBlock-1-Desk.webp') ;
+    float: left;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#droite{
+    width: 50%;
+    height: 500px;
+    background: url('StrateBlock-2-Desk.jpg') no-repeat;
+    float: right;
+    background-size: cover;
+    
+}
+#gauche h2{
+    margin-top:360px;
+    margin-left:50px;
+    text-align: left;
+    font-size: 30px;
+    color: rgb(46, 45, 45);
+    font-family: 'Raleway', sans-serif;
+
+}
+#gauche p {
+    margin-top: 7px;
+    margin-left: 188px;
+    text-align: left;
+    font-size: 16px;
+    color: rgb(46, 45, 45);
+    font-family: 'Raleway', sans-serif;
+}

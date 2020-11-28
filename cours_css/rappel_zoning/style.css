@@ -1,0 +1,40 @@
+body{
+ background: url(images/maxresdefault.jpg) no-repeat;
+ background-size: cover;   
+}
+header{
+    background-color: blueviolet;
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: rgb(43, 83, 3);
+    background: chartreuse;
+}
+main img {
+    width: 100%;
+}
+nav{
+    background-color: rgb(202, 159, 241);
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+}
+main p{
+    background: white;
+    padding: 20px;
+    text-align: justify;
+}
+main{
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+}
+footer{
+    background-color: rgb(221, 193, 248);
+    width: 1000px;
+    height: 50px;
+    margin: auto;
+}
