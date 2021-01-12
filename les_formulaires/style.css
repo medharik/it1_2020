@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contact{
+    width: 600px;
+    min-height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.demi{
+    width: 50%;
+    border: 1px solid rgb(199, 199, 199);
+    box-sizing: border-box;
+    float: left;
+     min-height: 200px;
+}
+.fa-whatsapp-square{
+    color: green;
+    font-size: 6em;
+    display: block;
+}
+.fa-facebook-square{
+    color: blue;
+    font-size: 6em;
+    display: block;
+}

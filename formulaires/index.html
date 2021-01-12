@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction des formulaires</title>
+    <style>
+        table{
+            width: 310px;
+        }
+            th{
+                text-align: left;
+            }
+            label{
+                color: darkslategray;
+                cursor: pointer;
+
+            }
+            table{
+                border: 1px solid darkslategray;
+                border-radius:2px;
+                padding: 10px;
+                box-shadow: 1px 2px 2px black;
+            }
+            button{
+                background: darkslategray;
+                color: white;
+                border: 1px solid rgb(40, 75, 75);;
+                width: 50px;
+                margin: 2px;
+               
+            }
+            button[type="reset"]{
+                background: crimson;
+            }
+    </style>
+</head>
+
+<form action="">
+   <table border="0"  align="center">
+       <tr>
+           <th ><label for="login">Login</label></th>
+           <td><input type="text" placeholder="Email..." id="login"  required ></td>
+       </tr>
+       <tr>
+           <th><label for="p">Mot de passe </label> </th>
+           <td><input type="password" placeholder="Mot de passe ..." id="p" required></td>
+       </tr>
+       <tr>
+           <td>Genre </td>
+           <td> <label for="homme">Homme</label>   <input id="homme" type="radio" name="genre" > 
+            <label for="x">Femme</label> <input type="radio" name="genre"   id="x"></td>
+       </tr>
+       <tr>
+           <td>Couleur préférée</td>
+           <td>
+              <label for="red">Rouge</label>    <input type="checkbox" id="red">
+              <label for="green">Ver</label>    <input type="checkbox" id="green">
+              <label for="blue">Bleu</label>    <input type="checkbox" id="blue">
+              
+
+           </td>
+       </tr>
+       <tr>
+           <td></td>
+           <td>
+               <button type="reset">Anuller</button>
+               <button type="submit">Valider</button>
+        
+        </td>
+       </tr>
+   </table>
+</form>
+
+</body>
+</html>

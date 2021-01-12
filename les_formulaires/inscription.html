@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les form 3 </title>
+</head>
+<body>
+    <form action="">
+        <!-- table>tr*5>(th+td) -->
+        <table border="1" align="center">
+            <tr>
+                <th><label for="np">Nom & Prénom</label></th>
+                <td><input  required type="text" id="np" name="nomprenom"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <th><label for="tel">Tel</label></th>
+                <td>
+                    <input type="tel" name="tel" id="tel">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="kw">Mots cles preferees </label></th>
+                <td>
+                    <input type="search" name="kw" id="kw">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="passe">Mot de passe </label></th>
+                <td><input type="password" id="passe" name="passe"></td>
+            </tr>
+            <tr>
+                <th><label for="">Genre</label></th>
+                <td>
+                    <label for="homme">Homme</label>
+                    <input type="radio" checked name="genre" id="homme" value="homme">
+                    <label for="femme">Femme</label>
+                    <input type="radio" name="genre" id="femme" value="femme">
+
+                </td>
+            </tr>
+            <tr>
+                <th>Spéciaité</th>
+                <td>
+                    <label for="info">Informatique</label>
+                    <input type="checkbox" checked name="specialite" id="info" value="informatique">
+                    <label for="mg">Management</label>
+                    <input type="checkbox" name="specialite" id="mg" value="management">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="col">Couleur preferee</label></th>
+                <td>
+                    <input type="color" name="col" id="col">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="salaire">Salaire</label></th>
+                <td>
+                    <input  type="number" name="salaire" id="salaire" step="0.1" min="1200" max="9999999">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="dn">Date de naissance </label></th>
+                <td>
+                    <input type="date" name="dn" id="dn">
+                </td>
+
+            </tr>
+            <tr>
+                <th><label for="h">Heure de départ </label></th>
+                <td><input type="time" name="h" id="h"></td>
+            </tr>
+            <tr>
+                <td><label for="">Ville</label></td>
+                <th>
+                    <select name="ville" id="ville" multiple size="3" >
+                        <option value="casa">Casablanca</option>
+                        <option value="rabat">Rabat</option>
+                        <option value="el jadida">EL Jadida</option>
+                        <option value="dakar">Dakar</option>
+                        <option value="" selected >...</option>
+
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <td><button>S'inscrire</button></td>
+            </tr>
+        </table>
+
+    </form>
+    
+</body>
+</html>
