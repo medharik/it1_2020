@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#zone_contact{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    box-shadow: 2px 2px 4px black;
+    
+}
+.b{
+    border: 0px solid black;
+}
+.demi{
+    width: 50%;
+    float: left;
+    height: auto;
+    padding: 10px;
+}
+
+form table {
+   width: 100%;
+   height:600px
+}
+input,textarea {
+width: 100%;
+}
+form table th{
+text-align: left;
+}
+input{
+    height: 36px;
+}
+button{
+    width: 50%;
+    height: 40px;
+    background: cornflowerblue;
+}
+.btn{
+    text-align: center;
+}
