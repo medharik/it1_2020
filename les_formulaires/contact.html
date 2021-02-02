@@ -18,8 +18,24 @@
                         </tr>
                         <tr>
                             <th><label for="email">Email</label></th>
-                            <td><input type="text" name="email" id="email"></td>
+                            <td><input type="text" name="email" id="email" pattern="[a-z]{1,}@itsup.ma" ></td>
                         </tr>
+                        <tr>
+                            <td><label for="cin">CIN : </label></td>
+                            <td>
+                                    <input type="text" id="cin" pattern="[a-z]{1,2}[0-9]{5,6}">
+                                    
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><label for="fixe">FIXE  : </label></td>
+                            <td>
+                                <input type="text" id="fixe" pattern="0522[0-9]{6}" placeholder="0522112233">
+                                <div style="color: gray;">Exemple : 0522344556</div>
+
+                            </td>
+                        </tr>
+                        
                         <tr>
                             <th><label for="">Genre</label></th>
                             <td>
