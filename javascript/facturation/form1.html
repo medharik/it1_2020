@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les bases du JS</title>
+</head>
+
+<body>
+    les attributs de données (DATA ATTRIBUTES)
+    Produit :
+    <select name="" id="produit" onchange="afficherImage()">
+        <option value="images/hp.jpg" data-prix="5000" data-marque="HP">Hp </option>
+        <option value="images/dell.jfif" data-prix="6000" data-marque="dell">DELL</option>
+        <option value="images/sony.jfif" data-prix="7000" data-marque="sony">SONY </option>
+        <option value="images/acer.jpg" data-prix="8000" data-marque="acer">ACER</option>
+    </select>
+
+
+    <img src="images/acer.jpg" alt="" height="100" id="tof">
+    <h3 id="hlibelle"></h3>
+    <h4 id="hprix"></h4>
+
+    <script>
+
+        function afficherImage() {
+            //recuperer l'option choisit 
+            let liste = document.getElementById('produit');
+            let tof = document.getElementById('tof');
+            let hlibelle = document.getElementById('hlibelle');
+            let hprix = document.getElementById('hprix');
+            console.log('indice est ' + liste.selectedIndex)
+            let option = liste[liste.selectedIndex];
+            let prix = option.dataset.prix
+            let marque = option.dataset.marque
+            tof.src=option.value
+            hlibelle.innerText=option.innerText
+            hprix.innerText=prix+'DHS'
+            
+
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

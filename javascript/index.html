@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro JS</title>
+</head>
+
+<body a>
+    <!-- <marquee style="color:white;background: red;padding: 10px;" onmouseover="stop()" 
+     onmouseout="start()">
+HTML => CONTENU WEB 
+CSS => STYLE WEB 
+JS => Langage de PROGRAMMATION  COTE CLIENT (NAVIGATEUR)
+    </marquee> -->
+    <!-- VANILA JAVASCRIPT -->
+    prix unitaire HT : <input type="text" id="puht">
+    Quantité : <input type="text" id="qte">
+    <button onclick="calculer_ttc()">Calculer THT</button>
+
+    <script>
+
+        // sous programme (function) "calculer_tht" permattant de calculer le THT
+        function calculer_ttc() {
+            let prix = document.getElementById('puht').value;
+            let qte = document.getElementById('qte').value;
+            //verifier la validité des données : prix (doit etre un nombre >0) et la  qte (doit un nombre > 0)
+            //isNaN => is  Not a Number
+            //!isNaN =>Not  is  Not a Number => is a Number
+
+            if (isNaN(prix)) {
+
+
+                alert("Erreur: le prix n'est pas numérique ");
+            } else if (isNaN(qte)) {
+                alert('Erreur : la qte n est pas numerique');
+
+            } else if (qte < 0) {
+                alert('Erreur : la qte  <0');
+
+            }
+            else if (prix < 0) {
+                alert('prix < 0')
+            } else {
+                let tht = prix * qte;
+                alert("THT = " + tht + "DHS");
+
+            }
+
+
+
+
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
