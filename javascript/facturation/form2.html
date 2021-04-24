@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facturation 3 </title>
 </head>
+
 <body>
 
-    <form action="">
-        <select id="produit" onchange="traiter()"  >
-            <option value="" data-prix="4500"  data-qte="10">hp </option>
-            <option value="" data-prix="5000">dell </option>
-            <option value="" data-prix="6000">sony</option>
-        </select>
-       Prix : <input type="number" id="prix">
-      Qte :   <input type="number" id="qte"  value="900">
-        <button>+</button>
-    </form>
-    
-   
+    <table border="1" width="800" align="center">
+        <tr>
+            <td>
+                 <select id="produit" onchange="traiter()">
+                    <option value="" data-prix="4500" data-src="images/hp.jpg">hp </option>
+                    <option value="" data-prix="5000" data-src="images/dell.jfif">dell </option>
+                    <option value="" data-prix="6000" data-src="images/acer.jpg">Acer</option>
+                </select></td>
+            <td>    Prix : <input type="number" id="prix">
+            </td>
+            <td>    Qte : <input type="number" id="qte" value="900">
+            </td>
+            <td>
+               <img src="" alt="" id="tof" height="150"> 
+            </td>
+            
+            <td>
+                <button>+</button>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
 
     <script>
-            function traiter(){
-              let produit=  document.getElementById('produit');
-              let champ_prix=  document.getElementById('prix');
+        function traiter() {
+            let produit = document.getElementById('produit');
+            let champ_prix = document.getElementById('prix');
+            let tof = document.getElementById('tof');
 
-              let option = produit[produit.selectedIndex];
-              let prix =option.dataset.prix;
-                champ_prix.value=prix
-            console.log('le prix est '+prix)
-             console.log('option est '+option.innerHTML);
-            }
-   
+            let option = produit[produit.selectedIndex];
+            let prix = option.dataset.prix;
+            let chemin = option.dataset.src;
+tof.src=chemin
+            champ_prix.value = prix
+            console.log('le prix est ' + prix)
+            console.log('option est ' + option.innerHTML);
+        }
+
     </script>
 </body>
+
 </html>
